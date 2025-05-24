@@ -6,6 +6,7 @@ public class MainMenuScript : MonoBehaviour
 {
     [SerializeField] Button buttonStartGame;
     [SerializeField] Button buttonQuitGame;
+    [SerializeField] GameObject mainMenuPanel;
     void Start()
     {
         
@@ -20,7 +21,6 @@ public class MainMenuScript : MonoBehaviour
     {
         Debug.Log("Startet Game");
         SceneManager.LoadScene("GameScene");
-        SceneManager.UnloadSceneAsync("MainMenuScene");
     }
 
     void QuitGame()
