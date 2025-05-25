@@ -7,6 +7,7 @@ TagManager:
   - Deathzone
   - obstacle
   - coin
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Void
+    uniqueID: 3499951649
+    locked: 0
+  - name: Walls
+    uniqueID: 78005003
     locked: 0
   - name: Coins
     uniqueID: 1159843703
