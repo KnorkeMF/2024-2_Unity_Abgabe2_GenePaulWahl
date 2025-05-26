@@ -6,6 +6,7 @@ public class MainMenuScript : MonoBehaviour
 {
     [SerializeField] Button buttonStartGame;
     [SerializeField] Button buttonQuitGame;
+    [SerializeField] Button buttonBack;
     [SerializeField] GameObject mainMenuPanel;
     void Start()
     {
@@ -13,7 +14,6 @@ public class MainMenuScript : MonoBehaviour
         //Button Functions
         buttonStartGame.onClick.AddListener(StartGame);
         buttonQuitGame.onClick.AddListener(QuitGame);
-        
     }
 
 

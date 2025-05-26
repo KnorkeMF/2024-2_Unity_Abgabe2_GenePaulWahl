@@ -18,6 +18,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject panelWon;
     [SerializeField] Button buttonRestartWon;
     [SerializeField] Button buttonMainMenuWon;
+    
+    [SerializeField]GameObject panelProtocol;
 
     private void Start()
     {
@@ -55,5 +57,10 @@ public class UIManager : MonoBehaviour
         Debug.Log("Panel Win");
         panelWon.SetActive(true);
         
+    }
+
+    public void HidePanelProtocol()
+    {
+        panelProtocol.SetActive(false);
     }
 }

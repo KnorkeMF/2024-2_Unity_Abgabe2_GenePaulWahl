@@ -1,16 +1,20 @@
+using System;
 using UnityEngine;
 
 public class AudioScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+   private static AudioScript instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void Awake()
+   {
+      if (instance == null)
+      {
+         instance = this;
+         DontDestroyOnLoad(gameObject);
+      }
+      else
+      {
+         Destroy(gameObject);
+      }
+   }
 }

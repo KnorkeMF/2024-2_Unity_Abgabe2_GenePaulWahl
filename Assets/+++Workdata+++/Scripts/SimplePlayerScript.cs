@@ -89,6 +89,13 @@ public class SimplePlayerScript : MonoBehaviour
             canMove = false;
         }
         
+        if (other.CompareTag("uitrigger"))
+        {
+            Debug.Log(message: "mit dem uitrigger" );
+            Destroy(other.gameObject);
+            uiManager.HidePanelProtocol();  
+        }
+        
     }
 }
 

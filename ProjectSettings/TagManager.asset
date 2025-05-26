@@ -8,6 +8,7 @@ TagManager:
   - obstacle
   - coin
   - Audio
+  - uitrigger
   layers:
   - Default
   - TransparentFX
@@ -59,6 +60,9 @@ TagManager:
     locked: 0
   - name: StartRoom
     uniqueID: 1882199985
+    locked: 0
+  - name: StartRoom Walls
+    uniqueID: 1056696273
     locked: 0
   - name: Player
     uniqueID: 2888059735
